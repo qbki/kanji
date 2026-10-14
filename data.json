@@ -1,0 +1,44 @@
+{
+    "data": [
+        [
+            "日",
+            {
+                "on": ["hi", "ka"],
+                "kun": ["nichi", "jitsu"],
+                "translations": {
+                    "ru": "День"
+                }
+            }
+        ],
+        [
+            "何",
+            {
+                "on": ["ka"],
+                "kun": ["nan", "nani"],
+                "translations": {
+                    "ru": "Что"
+                }
+            }
+        ],
+        [
+            "大",
+            {
+                "on": ["dai", "tai"],
+                "kun": ["oo", "ooki"],
+                "translations": {
+                    "ru": "Большой"
+                }
+            }
+        ],
+        [
+            "学",
+            {
+                "on": ["gaku"],
+                "kun": ["mana", "manabu"],
+                "translations": {
+                    "ru": "Учиться"
+                }
+            }
+        ]
+    ]
+}

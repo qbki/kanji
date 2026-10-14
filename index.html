@@ -1,54 +1,36 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>漢字</title>
+    <style>
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 24px;
+        }
+
+        .readings {
+            text-align: center;
+        }
+
+        input {
+            font-size: 24px;
+        }
+    </style>
+</head>
 <body>
-    <div id="kanji"></div>
-    <div id="readings"></div>
-    <form id="form">
-        <input type="text" name="input" id="input">
-    </form>
+    <div class="main">
+        <div id="kanji"></div>
+        <div id="readings" class="readings"></div>
+        <form id="form">
+            <input type="text" name="input" id="input" autofocus>
+        </form>
+    </div>
     <script>
-        const data = [
-            [
-                "日",
-                {
-                    "on": ["hi", "ka"],
-                    "kun": ["nichi", "jitsu"],
-                    "translations": {
-                        "ru": "День"
-                    }
-                },
-            ],
-            [
-                "何",
-                {
-                    "on": ["ka"],
-                    "kun": ["nan", "nani"],
-                    "translations": {
-                        "ru": "Что"
-                    }
-                },
-            ],
-            [
-                "大",
-                {
-                    "on": ["dai", "tai"],
-                    "kun": ["oo", "ooki"],
-                    "translations": {
-                        "ru": "Большой"
-                    }
-                },
-            ],
-            [
-                "学",
-                {
-                    "on": ["gaku"],
-                    "kun": ["mana", "manabu"],
-                    "translations": {
-                        "ru": "Учиться"
-                    }
-                },
-            ],
-        ];
+        let data = [];
+
         const model = {
             current: 0,
             found: new Set(),
@@ -103,7 +85,15 @@
             return false;
         });
 
-        update_model();
+        fetch("data.json")
+            .catch((error) => console.log("Error while loading data: ", error))
+            .then((response) => data = response.json())
+            .catch((error) => console.log("Parse error: ", error))
+            .then((value) => {
+                data = value.data;
+                update_model();
+            })
+            .catch((error) => console.log("Update model: ", error));
 
     </script>
 </body>
