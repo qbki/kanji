@@ -39,6 +39,488 @@
                     "ru": "Учиться"
                 }
             }
-        ]
+        ],
+
+        [
+            "人",
+            {
+                "on": ["nin", "jin"],
+                "kun": ["hito"],
+                "translations": {
+                    "ru": "Человек"
+                }
+            }
+        ],
+        [
+            "名",
+            {
+                "on": ["mei", "myou"],
+                "kun": ["na"],
+                "translations": {
+                    "ru": "Имя"
+                }
+            }
+        ],
+        [
+            "方",
+            {
+                "on": ["hou"],
+                "kun": ["kata"],
+                "translations": {
+                    "ru": "Сторона, направление"
+                }
+            }
+        ],
+        [
+            "本",
+            {
+                "on": ["hon"],
+                "kun": ["moto"],
+                "translations": {
+                    "ru": "Книга"
+                }
+            }
+        ],
+
+        [
+            "社",
+            {
+                "on": ["sha"],
+                "kun": ["yashiro"],
+                "translations": {
+                    "ru": "фирма, общество, место совместной работы"
+                }
+            }
+        ],
+        [
+            "員",
+            {
+                "on": ["in"],
+                "kun": [],
+                "translations": {
+                    "ru": "Сотрудник, член"
+                }
+            }
+        ],
+        [
+            "会",
+            {
+                "on": ["kai", "e"],
+                "kun": ["a", "au"],
+                "translations": {
+                    "ru": "Встречаться"
+                }
+            }
+        ],
+        [
+            "先",
+            {
+                "on": ["sen"],
+                "kun": ["saki"],
+                "translations": {
+                    "ru": "Впереди, кончик"
+                }
+            }
+        ],
+
+        [
+            "行",
+            {
+                "on": ["kou", "gyou"],
+                "kun": ["yu", "yuku", "i", "iku", "okona", "okonau"],
+                "translations": {
+                    "ru": "Идти"
+                }
+            }
+        ],
+        [
+            "来",
+            {
+                "on": ["rai"],
+                "kun": ["ku", "kuru"],
+                "translations": {
+                    "ru": "Приходить"
+                }
+            }
+        ],
+        [
+            "車",
+            {
+                "on": ["sha"],
+                "kun": ["kuruma"],
+                "translations": {
+                    "ru": "Повозка, машина"
+                }
+            }
+        ],
+        [
+            "百",
+            {
+                "on": ["hyaku"],
+                "kun": ["momo"],
+                "translations": {
+                    "ru": "Сто"
+                }
+            }
+        ],
+
+        [
+            "千",
+            {
+                "on": ["sen"],
+                "kun": ["chi"],
+                "translations": {
+                    "ru": "Тысяча"
+                }
+            }
+        ],
+        [
+            "万",
+            {
+                "on": ["man", "ban"],
+                "kun": ["yorozu"],
+                "translations": {
+                    "ru": "Десять тысяч"
+                }
+            }
+        ],
+        [
+            "円",
+            {
+                "on": ["en"],
+                "kun": ["maru", "marui"],
+                "translations": {
+                    "ru": "Иена"
+                }
+            }
+        ],
+        [
+            "毎",
+            {
+                "on": ["mai"],
+                "kun": [],
+                "translations": {
+                    "ru": "Каждый"
+                }
+            }
+        ],
+
+        [
+            "時",
+            {
+                "on": ["ji"],
+                "kun": ["toki"],
+                "translations": {
+                    "ru": "Время"
+                }
+            }
+        ],
+        [
+            "分",
+            {
+                "on": ["fun", "bun"],
+                "kun": ["wa", "wakaru", "wakeru", "wakareru", "wakatsu"],
+                "translations": {
+                    "ru": "Минута"
+                }
+            }
+        ],
+        [
+            "半",
+            {
+                "on": ["han"],
+                "kun": ["naka", "nakaba"],
+                "translations": {
+                    "ru": "Половина"
+                }
+            }
+        ],
+        [
+            "国",
+            {
+                "on": ["koku"],
+                "kun": ["kuni"],
+                "translations": {
+                    "ru": "Страна"
+                }
+            }
+        ],
+
+        [
+            "月",
+            {
+                "on": ["getsu", "gatsu"],
+                "kun": ["tsuki"],
+                "translations": {
+                    "ru": "Месяц"
+                }
+            }
+        ],
+        [
+            "火",
+            {
+                "on": ["ka"],
+                "kun": ["hi"],
+                "translations": {
+                    "ru": "Огонь"
+                }
+            }
+        ],
+        [
+            "水",
+            {
+                "on": ["sui"],
+                "kun": ["mizu"],
+                "translations": {
+                    "ru": "Вода"
+                }
+            }
+        ],
+        [
+            "木",
+            {
+                "on": ["moku", "boku"],
+                "kun": ["ki", "ko"],
+                "translations": {
+                    "ru": "Дерево"
+                }
+            }
+        ],
+
+        [
+            "金",
+            {
+                "on": ["kin"],
+                "kun": ["kane"],
+                "translations": {
+                    "ru": "Золото, деньги"
+                }
+            }
+        ],
+        [
+            "土",
+            {
+                "on": ["do"],
+                "kun": ["tsuchi"],
+                "translations": {
+                    "ru": "Земля, почва"
+                }
+            }
+        ],
+        [
+            "書",
+            {
+                "on": ["sho"],
+                "kun": ["ka", "kaku"],
+                "translations": {
+                    "ru": "Писать"
+                }
+            }
+        ],
+        
+        [
+            "友",
+            {
+                "on": ["yuu"],
+                "kun": ["tomo"],
+                "translations": {
+                    "ru": "Друг"
+                }
+            }
+        ],
+        [
+            "年",
+            {
+                "on": ["nen"],
+                "kun": ["toshi"],
+                "translations": {
+                    "ru": "Год"
+                }
+            }
+        ],
+        [
+            "今",
+            {
+                "on": ["kon"],
+                "kun": ["ima"],
+                "translations": {
+                    "ru": "Сейчас"
+                }
+            }
+        ],
+        [
+            "週",
+            {
+                "on": ["shuu"],
+                "kun": [],
+                "translations": {
+                    "ru": "Неделя"
+                }
+            }
+        ],
+
+        [
+            "休",
+            {
+                "on": ["kyuu"],
+                "kun": ["yasu", "yasumu"],
+                "translations": {
+                    "ru": "Отдых"
+                }
+            }
+        ],
+        [
+            "前",
+            {
+                "on": ["zen"],
+                "kun": ["mae"],
+                "translations": {
+                    "ru": "Перед"
+                }
+            }
+        ],
+        [
+            "午",
+            {
+                "on": ["go"],
+                "kun": [],
+                "translations": {
+                    "ru": "Полдень"
+                }
+            }
+        ],
+        [
+            "後",
+            {
+                "on": ["go", "kou"],
+                "kun": ["ato", "ushi", "ushiro", "nochi", "oku", "okureru"],
+                "translations": {
+                    "ru": "После"
+                }
+            }
+        ],
+
+        [
+            "校",
+            {
+                "on": ["kou"],
+                "kun": [],
+                "translations": {
+                    "ru": "Школа"
+                }
+            }
+        ],
+        [
+            "帰",
+            {
+                "on": ["ki"],
+                "kun": ["kae", "kaeru"],
+                "translations": {
+                    "ru": "Возвращаться"
+                }
+            }
+        ],
+        [
+            "見",
+            {
+                "on": ["ken"],
+                "kun": ["mi", "miru", "miseru", "mieru"],
+                "translations": {
+                    "ru": "Видеть"
+                }
+            }
+        ],
+        [
+            "聞",
+            {
+                "on": ["bun"],
+                "kun": ["ki", "kiku", "kikoeru", "kikasu"],
+                "translations": {
+                    "ru": "Слушать"
+                }
+            }
+        ],
+
+        [
+            "読",
+            {
+                "on": ["doku"],
+                "kun": ["yo", "yomu"],
+                "translations": {
+                    "ru": "Читать"
+                }
+            }
+        ],
+        [
+            "食",
+            {
+                "on": ["shoku"],
+                "kun": ["ta", "taberu", "ku", "kuu", "kurau"],
+                "translations": {
+                    "ru": "Есть"
+                }
+            }
+        ],
+        [
+            "飲",
+            {
+                "on": ["in"],
+                "kun": ["no", "nomu"],
+                "translations": {
+                    "ru": "Пить"
+                }
+            }
+        ],
+        [
+            "買",
+            {
+                "on": ["bai"],
+                "kun": ["ka", "kau"],
+                "translations": {
+                    "ru": "Покупать"
+                }
+            }
+        ],
+
+        [
+            "",
+            {
+                "on": [""],
+                "kun": [""],
+                "translations": {
+                    "ru": ""
+                }
+            }
+        ],
+        [
+            "",
+            {
+                "on": [""],
+                "kun": [""],
+                "translations": {
+                    "ru": ""
+                }
+            }
+        ],
+        [
+            "",
+            {
+                "on": [""],
+                "kun": [""],
+                "translations": {
+                    "ru": ""
+                }
+            }
+        ],
+        [
+            "",
+            {
+                "on": [""],
+                "kun": [""],
+                "translations": {
+                    "ru": ""
+                }
+            }
+        ],
     ]
 }
