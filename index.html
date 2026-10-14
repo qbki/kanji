@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="kanji"></div>
+    <div id="readings"></div>
+    <form id="form">
+        <input type="text" name="input" id="input">
+    </form>
+    <script>
+        const data = [
+            [
+                "日",
+                {
+                    "on": ["hi", "ka"],
+                    "kun": ["nichi", "jitsu"],
+                    "translations": {
+                        "ru": "День"
+                    }
+                },
+            ],
+            [
+                "何",
+                {
+                    "on": ["ka"],
+                    "kun": ["nan", "nani"],
+                    "translations": {
+                        "ru": "Что"
+                    }
+                },
+            ],
+            [
+                "大",
+                {
+                    "on": ["dai", "tai"],
+                    "kun": ["oo", "ooki"],
+                    "translations": {
+                        "ru": "Большой"
+                    }
+                },
+            ],
+            [
+                "学",
+                {
+                    "on": ["gaku"],
+                    "kun": ["mana", "manabu"],
+                    "translations": {
+                        "ru": "Учиться"
+                    }
+                },
+            ],
+        ];
+        const model = {
+            current: 0,
+            found: new Set(),
+        };
+
+        const form = document.getElementById("form");
+
+        const get_both_readings = () => (
+            [ ...data[model.current][1].on, 
+              ...data[model.current][1].kun ]
+        );
+
+        const update_model = () => {
+            if (model.found.size == get_both_readings().length) {
+                model.current = (model.current + 1) % data.length;
+                model.found = new Set();
+            }
+
+            const kanji_elem = document.getElementById("kanji");
+            kanji_elem.textContent = data[model.current][0];
+
+            const both_readings = get_both_readings();
+            const found = [];
+            for (reading of both_readings) {
+                const value = model.found.has(reading) ? reading : "?";
+                found.push(value);
+            }
+
+            const readings_elem = document.getElementById("readings");
+            readings_elem.innerHTML = found.join("<br>");
+        };
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+
+            const input = document.getElementById("input");
+
+            const both = get_both_readings();
+
+            if (both.includes(input.value)) {
+                model.found.add(input.value);
+                update_model();
+            } else {
+                console.log("nop");
+            }
+
+            input.value = "";
+
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
+        });
+
+        update_model();
+
+    </script>
+</body>
+</html>
