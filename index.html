@@ -19,6 +19,8 @@
             font-size: 24px;
         }
     </style>
+    <link rel="stylesheet" href="components/ReadingChip/style.css">
+    <script type="module" defer src="components/ReadingChip/script.js"></script>
 </head>
 <body>
     <div class="main">
@@ -43,40 +45,40 @@
               ...data[model.current][1].kun ]
         );
 
-        const update_model = () => {
-            if (model.found.size == get_both_readings().length) {
-                model.current = (model.current + 1) % data.length;
-                model.found = new Set();
-            }
-
+        const init_model = () => {
             const kanji_elem = document.getElementById("kanji");
             kanji_elem.textContent = data[model.current][0];
 
             const both_readings = get_both_readings();
             const found = [];
             for (reading of both_readings) {
-                const value = model.found.has(reading) ? reading : "?";
-                found.push(value);
+                found.push(`<reading-chip value=${reading}></reading-chip>`);
             }
 
             const readings_elem = document.getElementById("readings");
             readings_elem.innerHTML = found.join("<br>");
         };
 
-        form.addEventListener("submit", (event) => {
-            event.preventDefault();
-            event.stopPropagation();
-
-            const input = document.getElementById("input");
-
-            const both = get_both_readings();
-
-            if (both.includes(input.value)) {
-                model.found.add(input.value);
-                update_model();
-            } else {
-                console.log("nop");
+        const update_model = () => {
+            if (model.found.size == get_both_readings().length) {
+                model.current = (model.current + 1) % data.length;
+                model.found = new Set();
+                init_model();
             }
+        };
+
+        form.addEventListener("submit", (event) => {
+            const input = document.getElementById("input");
+            const inputValue = input.value;
+
+            for (const elem of document.querySelectorAll('reading-chip')) {
+                if (elem.value === inputValue) {
+                    elem.solve();
+                    model.found.add(inputValue);
+                    break;
+                }
+            }
+            update_model();
 
             input.value = "";
 
@@ -91,6 +93,7 @@
             .catch((error) => console.log("Parse error: ", error))
             .then((value) => {
                 data = value.data;
+                init_model();
                 update_model();
             })
             .catch((error) => console.log("Update model: ", error));

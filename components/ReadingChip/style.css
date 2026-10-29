@@ -1,0 +1,15 @@
+.components-reading-chip {
+    display: inline-block;
+    font-family: monospace;
+    cursor: pointer;
+    user-select: none;
+
+    .readings {
+        text-align: center;
+        color: red;
+    }
+
+    &.solved {
+        color: green;
+    }
+}
